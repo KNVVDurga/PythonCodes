@@ -1,0 +1,16 @@
+s = "abccbaD"
+n = len(s)//2
+mu = len(s)
+valid = True
+for i in range(n):
+    l = s[i]
+    r = s[mu-1-i]
+    print(l,r)
+    if (l!=r):
+        valid = False
+        break
+        
+if valid:
+    print("Yes")
+else:
+    print("NO")
